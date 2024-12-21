@@ -19,3 +19,48 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.glass {
+  backdrop-filter: blur(8px) saturate(153%);
+  -webkit-backdrop-filter: blur(8px) saturate(153%);
+  background-color: rgba(255, 255, 255, 0.19);
+}
+
+.glass2 {
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.primary-glass {
+  background-color: hsla(240, 5%, 7%, 1);
+  background-image: radial-gradient(
+      at 89% 72%,
+      hsla(240, 5%, 7%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 20% 0%, hsla(19, 93%, 49%, 1) 0px, transparent 50%);
+  position: relative;
+}
+
+.primary-glass::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.stickyheader {
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgba(18, 18, 20, 0.21);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
