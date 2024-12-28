@@ -10,7 +10,7 @@ export default function Navbar() {
       path: "/",
     },
     {
-      name: "Services",
+      name: "Skills",
       path: "/services",
     },
     {

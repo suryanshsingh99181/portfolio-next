@@ -1,5 +1,12 @@
 import React from "react";
-import { FaDev, FaDribbble, FaGithub, FaYoutube } from "react-icons/fa";
+import {
+  FaDev,
+  FaDribbble,
+  FaGithub,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
 import Counter from "./Counter";
 import { FiDownload } from "react-icons/fi";
 
@@ -14,11 +21,11 @@ export default function Hero() {
               I'm <span className="text-primarycolor">Suryansh</span>,
               <br />a web developer..
             </h2>
-            <p className="py-2 text-base ml-2 text-neutral-300 ">
+            {/* <p className="py-2 text-base ml-2 text-neutral-300 ">
               a Web-Developer who believes in enhancing the skills and knowledge
-            </p>
+            </p> */}
             <a href="/" className="w-auto cursor-default ">
-              <button className="bg-primarycolor flex justify-between gap-1 items-center px-6 rounded-2xl border-2 text-sm whitespace-nowrap py-2 hover:bg-transparent hover:border-2 border-primarycolor  transition-all ease-out duration-200">
+              <button className="bg-primarycolor flex justify-between mt-1 gap-1 items-center px-6 rounded-2xl border-2 text-sm whitespace-nowrap py-2 hover:bg-transparent hover:border-2 border-primarycolor  transition-all ease-out duration-200">
                 <FiDownload />
                 Resume
               </button>
@@ -40,7 +47,7 @@ export default function Hero() {
         <div className="w-7/12 flex h-full items-center py-5 justify-around bg-secondary p-3 rounded-3xl border ">
           <div className="flex w-full items-center justify-center gap-3 border-r-2 ">
             <div className="font-bold flex text-3xl text-primarycolor">
-              <Counter from={0} to={4} />+
+              <Counter from={0} to={2} />+
             </div>
             <div>
               <h4 className="text-md">
@@ -55,7 +62,7 @@ export default function Hero() {
             </div>
             <div>
               <h4 className="text-md">
-                project
+                projects
                 <br /> Completed
               </h4>
             </div>
@@ -68,7 +75,7 @@ export default function Hero() {
                 <li>
                   <a href="">
                     <button className="w-14 h-14 rounded-full flex justify-center items-center glass border border-gray-600/[0.5] transition-all duration-200 ease-in-out hover:bg-primarycolor">
-                      <FaDribbble className="w-8 h-8 text-white" />
+                      <FaLinkedin className="w-8 h-8 text-white" />
                     </button>
                   </a>
                 </li>
@@ -89,7 +96,7 @@ export default function Hero() {
                 <li>
                   <a href="">
                     <button className="w-14 h-14 rounded-full flex justify-center items-center glass border border-gray-600/[0.5] transition-all duration-200 ease-in-out hover:bg-primarycolor">
-                      <FaDev className="w-8 h-8 text-white" />
+                      <SiGeeksforgeeks className="w-8 h-8 text-white" />
                     </button>
                   </a>
                 </li>
